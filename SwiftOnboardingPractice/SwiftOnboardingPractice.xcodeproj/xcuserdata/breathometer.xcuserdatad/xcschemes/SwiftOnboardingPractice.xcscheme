@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "111E86B71D1C7AC100A2DB4B"
+               BlueprintIdentifier = "111E86F31D1C7BEB00A2DB4B"
                BuildableName = "SwiftOnboardingPractice.app"
                BlueprintName = "SwiftOnboardingPractice"
                ReferencedContainer = "container:SwiftOnboardingPractice.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "111E86CD1D1C7AC100A2DB4B"
+               BlueprintIdentifier = "111E87071D1C7BEB00A2DB4B"
                BuildableName = "SwiftOnboardingPracticeTests.xctest"
                BlueprintName = "SwiftOnboardingPracticeTests"
                ReferencedContainer = "container:SwiftOnboardingPractice.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "111E86D81D1C7AC100A2DB4B"
+               BlueprintIdentifier = "111E87121D1C7BEB00A2DB4B"
                BuildableName = "SwiftOnboardingPracticeUITests.xctest"
                BlueprintName = "SwiftOnboardingPracticeUITests"
                ReferencedContainer = "container:SwiftOnboardingPractice.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "111E86B71D1C7AC100A2DB4B"
+            BlueprintIdentifier = "111E86F31D1C7BEB00A2DB4B"
             BuildableName = "SwiftOnboardingPractice.app"
             BlueprintName = "SwiftOnboardingPractice"
             ReferencedContainer = "container:SwiftOnboardingPractice.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "111E86B71D1C7AC100A2DB4B"
+            BlueprintIdentifier = "111E86F31D1C7BEB00A2DB4B"
             BuildableName = "SwiftOnboardingPractice.app"
             BlueprintName = "SwiftOnboardingPractice"
             ReferencedContainer = "container:SwiftOnboardingPractice.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "111E86B71D1C7AC100A2DB4B"
+            BlueprintIdentifier = "111E86F31D1C7BEB00A2DB4B"
             BuildableName = "SwiftOnboardingPractice.app"
             BlueprintName = "SwiftOnboardingPractice"
             ReferencedContainer = "container:SwiftOnboardingPractice.xcodeproj">
