@@ -18,37 +18,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Kevin_Logo_Square" translatesAutoresizingMaskIntoConstraints="NO" id="tCv-YT-Bl0">
-                                <rect key="frame" x="94" y="105" width="226" height="220"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Slim lets you know when you're burning fat and how much — just breath" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="5UW-hK-4tj">
+                                <rect key="frame" x="77" y="550" width="260" height="85"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="18"/>
+                                <color key="textColor" red="0.74509803919999995" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="by Breathometer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Geb-8K-14n">
+                                <rect key="frame" x="142" y="681" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Axis" translatesAutoresizingMaskIntoConstraints="NO" id="vi0-jg-uZs">
+                                <rect key="frame" x="0.0" y="209" width="414" height="299"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5n1-4C-PYP">
-                                <rect key="frame" x="184" y="578" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwY-ye-tRQ">
-                                <rect key="frame" x="150" y="353" width="107" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Slim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAX-s4-WwO">
+                                <rect key="frame" x="121" y="237" width="172" height="100"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="90"/>
+                                <color key="textColor" red="0.74509803919999995" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="tCv-YT-Bl0" secondAttribute="trailing" constant="74" id="6Fy-7a-6y9"/>
-                            <constraint firstItem="vwY-ye-tRQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="8dd-ct-zlh"/>
-                            <constraint firstItem="5n1-4C-PYP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LgQ-R7-aiV"/>
-                            <constraint firstItem="vwY-ye-tRQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ULw-P3-Hjt"/>
-                            <constraint firstItem="tCv-YT-Bl0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="Vj1-m9-SP9"/>
-                            <constraint firstItem="tCv-YT-Bl0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="74" id="e9f-po-nbn"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5n1-4C-PYP" secondAttribute="bottom" constant="128" id="vUs-A0-90g"/>
-                            <constraint firstItem="tCv-YT-Bl0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wFc-C7-OdI"/>
+                            <constraint firstItem="vi0-jg-uZs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="8nl-6e-rU7"/>
+                            <constraint firstItem="Geb-8K-14n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AuZ-LR-5Dc"/>
+                            <constraint firstItem="lAX-s4-WwO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="BZ0-dz-Z08"/>
+                            <constraint firstItem="5UW-hK-4tj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cqy-GE-vxo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vi0-jg-uZs" secondAttribute="trailing" constant="40" id="D2w-XX-pzN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Geb-8K-14n" secondAttribute="bottom" constant="25" id="D77-bT-Bmg"/>
+                            <constraint firstItem="vi0-jg-uZs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Mba-uM-iEJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5UW-hK-4tj" secondAttribute="bottom" constant="120" id="TTV-cz-dwm"/>
+                            <constraint firstItem="lAX-s4-WwO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yd1-k1-epg"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="Btn" destination="5n1-4C-PYP" id="8Oa-RJ-27w"/>
-                        <outlet property="KHouLogo" destination="tCv-YT-Bl0" id="l7f-tX-tye"/>
-                        <outlet property="WelcomeText" destination="vwY-ye-tRQ" id="hBx-n0-QyS"/>
+                        <outlet property="BreathometerLabel" destination="Geb-8K-14n" id="23n-g4-cab"/>
+                        <outlet property="Graph" destination="vi0-jg-uZs" id="IIp-2l-SM5"/>
+                        <outlet property="SlimTitle" destination="lAX-s4-WwO" id="WlG-LM-Owr"/>
+                        <outlet property="SlimTitleVerticalConstraint" destination="BZ0-dz-Z08" id="7s2-Ye-Cfd"/>
+                        <outlet property="ValueProp" destination="5UW-hK-4tj" id="MHF-AJ-q8D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -57,6 +68,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Kevin_Logo_Square" width="1500" height="1500"/>
+        <image name="Axis" width="750" height="800"/>
     </resources>
 </document>

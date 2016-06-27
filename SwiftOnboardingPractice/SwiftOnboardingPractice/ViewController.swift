@@ -1,4 +1,4 @@
-//
+///
 //  ViewController.swift
 //  SwiftOnboardingPractice
 //
@@ -9,33 +9,73 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var KHouLogo: UIImageView!
-    @IBOutlet weak var Btn: UIButton!
-    @IBOutlet weak var WelcomeText: UILabel!
+    
+    // Objects
+    @IBOutlet weak var SlimTitle: UILabel!
+    @IBOutlet weak var ValueProp: UILabel!
+    @IBOutlet weak var BreathometerLabel: UILabel!
+    @IBOutlet weak var Graph: UIImageView!
+    
+    // Constraints
+    @IBOutlet weak var SlimTitleVerticalConstraint: NSLayoutConstraint!
+    
+    func runOpeningAnimation() {
+        print("Opening animation running")
+        self.Graph.alpha = 0 // Graph starts transparent
+        self.BreathometerLabel.alpha = 0
+        self.ValueProp.alpha = 0
+        self.SlimTitleVerticalConstraint.constant = -80
+        self.view.layoutIfNeeded()
+        
+        self.SlimTitleVerticalConstraint.constant = -200
+        
+        UIView.animateWithDuration(2.0, delay: 0, options: [.CurveEaseInOut], animations: ({
+            
+            self.view.layoutIfNeeded()
+            
+        }), completion: { (complete: Bool) in
+            print("Opening animation complete")
+            UIView.animateWithDuration(2.0, animations: ({
+                self.Graph.alpha = 1 // Graph starts transparent
+                self.BreathometerLabel.alpha = 1
+                self.ValueProp.alpha = 1
+            }))
+        })
+        
+        // Recognize swipes
+        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGesture(_:)))
+        swipeDown.direction = UISwipeGestureRecognizerDirection.Down
+        self.view.addGestureRecognizer(swipeDown)
+    }
+    
+    
+    
+    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            switch swipeGesture.direction {
+            case UISwipeGestureRecognizerDirection.Down:
+                print("Swiped down")
+            case UISwipeGestureRecognizerDirection.Up:
+                print("Swiped up")
+            default:
+                break
+            }
+        }
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        // Run any animations here
+        
+        runOpeningAnimation()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        KHouLogo.center.x = self.view.frame.width + 30  // Start off the screen
-        WelcomeText.alpha = 0  // Start invisible
         
-        let defaultBtnY: CGFloat = Btn.center.y  // Store
-        Btn.center.y = self.view.frame.height + 30  // Start below the screen
-        
-        UIView.animateWithDuration(5.0, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 2.0, options: [.CurveEaseInOut], animations: ({
-            // Animations go here
-            
-            self.KHouLogo.center.x = self.view.frame.width / 2
-            self.Btn.center.y = defaultBtnY
-            self.WelcomeText.alpha = 1.0
-            
-        }), completion: { (value: Bool) in
-            print("Animation complete")
-        })
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
