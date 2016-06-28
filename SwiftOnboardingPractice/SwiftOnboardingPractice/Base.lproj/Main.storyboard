@@ -95,9 +95,18 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v94-f1-ACE">
+                                <rect key="frame" x="134" y="596" width="146" height="30"/>
+                                <state key="normal" title="Begin Data Feedback"/>
+                                <connections>
+                                    <action selector="getScrollPercentage:" destination="mde-Um-Vj6" eventType="touchUpInside" id="BHh-Hp-lF3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="v94-f1-ACE" firstAttribute="centerX" secondItem="ScP-ql-nA5" secondAttribute="centerX" id="CBv-0p-JWi"/>
+                            <constraint firstItem="5nB-jg-KrF" firstAttribute="top" secondItem="v94-f1-ACE" secondAttribute="bottom" constant="100" id="EqW-tz-d9L"/>
                             <constraint firstItem="eCY-wR-5oh" firstAttribute="centerY" secondItem="ScP-ql-nA5" secondAttribute="centerY" id="Ugp-L5-dsT"/>
                             <constraint firstItem="eCY-wR-5oh" firstAttribute="centerX" secondItem="ScP-ql-nA5" secondAttribute="centerX" id="Usa-e7-CNz"/>
                         </constraints>

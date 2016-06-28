@@ -9,6 +9,11 @@
 import Foundation
 import UIKit
 
+struct PercentageScrolled {
+    // Global variable for percentage scrolled
+    static var value: Float = 0.0
+}
+
 class OnboardingPager: UIPageViewController {
     
     func getPageOne() -> PageOne {
@@ -31,7 +36,7 @@ class OnboardingPager: UIPageViewController {
         view.backgroundColor = .lightGrayColor() // Set background color to white
         
         
-        // Scrolling progress
+        // Scrolling progress - from: http://stackoverflow.com/questions/22577929/progress-of-uipageviewcontroller
         super.viewDidLoad()
         for subView in view.subviews {
             if subView is UIScrollView {
@@ -90,7 +95,8 @@ extension OnboardingPager: UIScrollViewDelegate {
     func scrollViewDidScroll(scrollView: UIScrollView) {
         let point = scrollView.contentOffset
         var percentComplete: CGFloat
-        percentComplete = fabs(point.x - view.frame.size.width)/view.frame.size.width
-        print("Percent of Scroll Completed: \(percentComplete)")
+        percentComplete = fabs(point.x - view.frame.size.width)/view.frame.size.width // Calc percentage complete
+        print("Percent of Scroll Completed: \(percentComplete)") // Feedback
+        PercentageScrolled.value = Float(percentComplete) // Update the value
     }
 }
