@@ -39,6 +39,14 @@
                                 <color key="textColor" red="0.74509803919999995" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYv-J3-sYm">
+                                <rect key="frame" x="188" y="643" width="39" height="30"/>
+                                <state key="normal" title="Begin"/>
+                                <connections>
+                                    <action selector="BeginOnboarding:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rjt-QP-Bs9"/>
+                                    <segue destination="UCq-Qe-tsm" kind="showDetail" identifier="SegueToOnboarding" id="4Mt-QZ-nm7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -49,12 +57,15 @@
                             <constraint firstAttribute="trailingMargin" secondItem="vi0-jg-uZs" secondAttribute="trailing" constant="40" id="D2w-XX-pzN"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Geb-8K-14n" secondAttribute="bottom" constant="25" id="D77-bT-Bmg"/>
                             <constraint firstItem="vi0-jg-uZs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Mba-uM-iEJ"/>
+                            <constraint firstItem="WYv-J3-sYm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RHZ-U8-dlX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5UW-hK-4tj" secondAttribute="bottom" constant="120" id="TTV-cz-dwm"/>
+                            <constraint firstItem="Geb-8K-14n" firstAttribute="top" secondItem="WYv-J3-sYm" secondAttribute="bottom" constant="8" id="tqO-5z-odz"/>
                             <constraint firstItem="lAX-s4-WwO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yd1-k1-epg"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="BeginButton" destination="WYv-J3-sYm" id="0og-c0-uSY"/>
                         <outlet property="BreathometerLabel" destination="Geb-8K-14n" id="23n-g4-cab"/>
                         <outlet property="Graph" destination="vi0-jg-uZs" id="IIp-2l-SM5"/>
                         <outlet property="SlimTitle" destination="lAX-s4-WwO" id="WlG-LM-Owr"/>
@@ -65,6 +76,78 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="565" y="490"/>
+        </scene>
+        <!--Page One-->
+        <scene sceneID="End-z0-88H">
+            <objects>
+                <viewController storyboardIdentifier="PageOne" id="mde-Um-Vj6" customClass="PageOne" customModule="SwiftOnboardingPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t2n-2F-OUi"/>
+                        <viewControllerLayoutGuide type="bottom" id="5nB-jg-KrF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ScP-ql-nA5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCY-wR-5oh">
+                                <rect key="frame" x="170" y="357" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eCY-wR-5oh" firstAttribute="centerY" secondItem="ScP-ql-nA5" secondAttribute="centerY" id="Ugp-L5-dsT"/>
+                            <constraint firstItem="eCY-wR-5oh" firstAttribute="centerX" secondItem="ScP-ql-nA5" secondAttribute="centerX" id="Usa-e7-CNz"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DC1-e1-jO6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="-332"/>
+        </scene>
+        <!--Page Two-->
+        <scene sceneID="uoY-bh-sJx">
+            <objects>
+                <viewController storyboardIdentifier="PageTwo" id="gyx-yp-PJg" customClass="PageTwo" customModule="SwiftOnboardingPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q4C-j9-ubt"/>
+                        <viewControllerLayoutGuide type="bottom" id="pR3-nx-7Ef"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vaE-Dl-FHe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page Two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZU-rg-EtG">
+                                <rect key="frame" x="170" y="357" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lZU-rg-EtG" firstAttribute="centerX" secondItem="vaE-Dl-FHe" secondAttribute="centerX" id="Hn6-dm-dO0"/>
+                            <constraint firstItem="lZU-rg-EtG" firstAttribute="centerY" secondItem="vaE-Dl-FHe" secondAttribute="centerY" id="viH-fl-ucu"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nmD-zT-jX4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1549" y="-332"/>
+        </scene>
+        <!--Onboarding Pager-->
+        <scene sceneID="hVh-k1-NAI">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="UCq-Qe-tsm" customClass="OnboardingPager" customModule="SwiftOnboardingPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7q6-Mg-hvH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="490"/>
         </scene>
     </scenes>
     <resources>

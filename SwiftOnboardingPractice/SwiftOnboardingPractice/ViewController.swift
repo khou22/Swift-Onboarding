@@ -15,9 +15,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var ValueProp: UILabel!
     @IBOutlet weak var BreathometerLabel: UILabel!
     @IBOutlet weak var Graph: UIImageView!
+    @IBOutlet weak var BeginButton: UIButton!
     
     // Constraints
     @IBOutlet weak var SlimTitleVerticalConstraint: NSLayoutConstraint!
+    
+    @IBAction func BeginOnboarding(sender: AnyObject) {
+        print("Button pressed")
+    }
     
     func runOpeningAnimation() {
         print("Opening animation running")
@@ -48,6 +53,12 @@ class ViewController: UIViewController {
         self.view.addGestureRecognizer(swipeDown)
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "SegueToOnboarding"
+        {
+            print("Seguing to the onboarding screens")
+        }
+    }
     
     
     func respondToSwipeGesture(gesture: UIGestureRecognizer) {
