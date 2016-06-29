@@ -102,6 +102,13 @@
                                     <action selector="getScrollPercentage:" destination="mde-Um-Vj6" eventType="touchUpInside" id="BHh-Hp-lF3"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="KHou Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Yvv-a0-lMB">
+                                <rect key="frame" x="87" y="76" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="4k4-hu-6P9"/>
+                                    <constraint firstAttribute="width" constant="240" id="Zre-12-r9V"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -109,11 +116,15 @@
                             <constraint firstItem="5nB-jg-KrF" firstAttribute="top" secondItem="v94-f1-ACE" secondAttribute="bottom" constant="100" id="EqW-tz-d9L"/>
                             <constraint firstItem="eCY-wR-5oh" firstAttribute="centerY" secondItem="ScP-ql-nA5" secondAttribute="centerY" id="Ugp-L5-dsT"/>
                             <constraint firstItem="eCY-wR-5oh" firstAttribute="centerX" secondItem="ScP-ql-nA5" secondAttribute="centerX" id="Usa-e7-CNz"/>
+                            <constraint firstItem="Yvv-a0-lMB" firstAttribute="centerX" secondItem="ScP-ql-nA5" secondAttribute="centerX" id="eaQ-l5-NWb"/>
+                            <constraint firstItem="Yvv-a0-lMB" firstAttribute="top" secondItem="t2n-2F-OUi" secondAttribute="bottom" constant="56" id="xC4-0F-FTX"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="dataFeedbackButton" destination="v94-f1-ACE" id="usg-9p-gCM"/>
+                        <outlet property="logoImage" destination="Yvv-a0-lMB" id="I33-xG-pl4"/>
+                        <outlet property="logoImageConstraintX" destination="eaQ-l5-NWb" id="HdM-iX-pcT"/>
                         <outlet property="pageTitle" destination="eCY-wR-5oh" id="xgz-23-YsC"/>
                         <outlet property="pageTitleConstraintX" destination="Usa-e7-CNz" id="LUs-SC-Epv"/>
                     </connections>
@@ -166,5 +177,6 @@
     </scenes>
     <resources>
         <image name="Axis" width="750" height="800"/>
+        <image name="KHou Logo" width="1500" height="1500"/>
     </resources>
 </document>
