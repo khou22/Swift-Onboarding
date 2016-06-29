@@ -112,6 +112,11 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="dataFeedbackButton" destination="v94-f1-ACE" id="usg-9p-gCM"/>
+                        <outlet property="pageTitle" destination="eCY-wR-5oh" id="xgz-23-YsC"/>
+                        <outlet property="pageTitleConstraintX" destination="Usa-e7-CNz" id="LUs-SC-Epv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DC1-e1-jO6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

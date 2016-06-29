@@ -96,7 +96,7 @@ extension OnboardingPager: UIScrollViewDelegate {
         let point = scrollView.contentOffset
         var percentComplete: CGFloat
         percentComplete = fabs(point.x - view.frame.size.width)/view.frame.size.width // Calc percentage complete
-        print("Percent of Scroll Completed: \(percentComplete)") // Feedback
+//        print("Percent of Scroll Completed: \(percentComplete)") // Feedback
         PercentageScrolled.value = Float(percentComplete) // Update the value
     }
 }
