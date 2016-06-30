@@ -14,6 +14,7 @@
 		111E87021D1C7BEB00A2DB4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111E87001D1C7BEB00A2DB4B /* LaunchScreen.storyboard */; };
 		111E870D1D1C7BEB00A2DB4B /* SwiftOnboardingPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111E870C1D1C7BEB00A2DB4B /* SwiftOnboardingPracticeTests.swift */; };
 		111E87181D1C7BEB00A2DB4B /* SwiftOnboardingPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111E87171D1C7BEB00A2DB4B /* SwiftOnboardingPracticeUITests.swift */; };
+		116B48F91D247FDE00028F65 /* PageThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116B48F81D247FDE00028F65 /* PageThree.swift */; };
 		119143D51D2318A3004E42B2 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119143D41D2318A3004E42B2 /* OnboardingView.swift */; };
 		119143D71D231C31004E42B2 /* PageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119143D61D231C31004E42B2 /* PageOne.swift */; };
 		119143D91D231E95004E42B2 /* PageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119143D81D231E95004E42B2 /* PageTwo.swift */; };
@@ -51,6 +52,7 @@
 		111E87131D1C7BEB00A2DB4B /* SwiftOnboardingPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftOnboardingPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		111E87171D1C7BEB00A2DB4B /* SwiftOnboardingPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOnboardingPracticeUITests.swift; sourceTree = "<group>"; };
 		111E87191D1C7BEB00A2DB4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		116B48F81D247FDE00028F65 /* PageThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageThree.swift; sourceTree = "<group>"; };
 		119143D41D2318A3004E42B2 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		119143D61D231C31004E42B2 /* PageOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageOne.swift; sourceTree = "<group>"; };
 		119143D81D231E95004E42B2 /* PageTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTwo.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				119143D41D2318A3004E42B2 /* OnboardingView.swift */,
 				119143D61D231C31004E42B2 /* PageOne.swift */,
 				119143D81D231E95004E42B2 /* PageTwo.swift */,
+				116B48F81D247FDE00028F65 /* PageThree.swift */,
 				119143DA1D23327F004E42B2 /* Interpolate.swift */,
 				111E86FE1D1C7BEB00A2DB4B /* Assets.xcassets */,
 				111E87001D1C7BEB00A2DB4B /* LaunchScreen.storyboard */,
@@ -273,6 +276,7 @@
 				111E86FA1D1C7BEB00A2DB4B /* ViewController.swift in Sources */,
 				119143DB1D23327F004E42B2 /* Interpolate.swift in Sources */,
 				111E86F81D1C7BEB00A2DB4B /* AppDelegate.swift in Sources */,
+				116B48F91D247FDE00028F65 /* PageThree.swift in Sources */,
 				119143D71D231C31004E42B2 /* PageOne.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

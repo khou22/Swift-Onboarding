@@ -30,13 +30,15 @@ class ViewController: UIViewController {
         self.BreathometerLabel.alpha = 0
         self.ValueProp.alpha = 0
         self.SlimTitleVerticalConstraint.constant = -80
+        self.BeginButton.alpha = 0
         self.view.layoutIfNeeded()
         
         self.SlimTitleVerticalConstraint.constant = -200
         
-        UIView.animateWithDuration(2.0, delay: 0, options: [.CurveEaseInOut], animations: ({
+        UIView.animateWithDuration(2.0, delay: 0, options: [.CurveEaseInOut, .AllowUserInteraction], animations: ({
             
             self.view.layoutIfNeeded()
+            self.BeginButton.alpha = 1
             
         }), completion: { (complete: Bool) in
             print("Opening animation complete")

@@ -26,6 +26,11 @@ class OnboardingPager: UIPageViewController {
         return storyboard!.instantiateViewControllerWithIdentifier("PageTwo") as! PageTwo
     }
     
+    func getPageThree() -> PageThree {
+        // Retrieve page two
+        return storyboard!.instantiateViewControllerWithIdentifier("PageThree") as! PageThree
+    }
+    
     override func viewDidLoad() {
         // Loads the first page immediately after the pager loads
         setViewControllers([getPageOne()], direction: .Forward, animated: false, completion: nil)
@@ -56,7 +61,10 @@ extension OnboardingPager: UIPageViewControllerDataSource {
         if viewController.isKindOfClass(PageOne) { // If you're on page one
             // We want to swipe to page two
             return getPageTwo()
-        } else { // If on page two
+        } else if viewController.isKindOfClass(PageTwo) {
+            // Swipe to page three
+            return getPageThree()
+        } else { // If on last page
             // End of all pages
             return nil
         }
@@ -65,7 +73,10 @@ extension OnboardingPager: UIPageViewControllerDataSource {
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         // Swiping backward
         
-        if viewController.isKindOfClass(PageTwo) {
+        if viewController.isKindOfClass(PageThree) {
+            // Page three --> page two
+            return getPageTwo()
+        } else if viewController.isKindOfClass(PageTwo) {
             // If on page two, can swipe back to page one
             return getPageOne()
         } else {
@@ -77,7 +88,7 @@ extension OnboardingPager: UIPageViewControllerDataSource {
     // ********* Sets up the page control dots *********
     func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
         // The number of dots in the page control dots
-        return 2
+        return 3
     }
     
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
